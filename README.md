@@ -18,3 +18,6 @@ with open('registrations.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile, fieldnames=['Team Name', 'Team Category', 'Member1', 'Contact', 'Member2', 'Member3','Language','Institution', 'Username', 'password'])
 ```
 Change the order of the array according to the csv order or it will show incorrect data
+
+
+**Disclaimer: The data contained in the CSV file is auto-generated and is not related to any real individuals or organizations. The data is intended for demonstration and educational purposes only. Any resemblance to actual people, living or dead, is purely coincidental. The author of this file does not guarantee the accuracy, completeness, or reliability of the data, and is not liable for any damages or losses that may arise from the use of this data.
