@@ -8,3 +8,13 @@ The code first imports the necessary modules, including csv for reading the CSV 
 For each row, the code extracts the relevant data, creates a string with the event details, generates a QR code from the string, and resizes the QR code to fit the ticket. It then creates a blank ticket image, adds the event logo and QR code to the ticket, and adds the team details and logos to the ticket. If the team is participating in a programming language-specific category, the code also adds the logo of the programming language to the ticket.
 
 Finally, the code saves each ticket image as a PNG file.
+
+The code can be used to make tickets for people coming at an event, and you have a large number of people, you dont need to download any software or give the sensitive information at any website, you can just import the .csv, run the code and thats it
+
+For changes in csv file:
+
+```
+with open('registrations.csv', newline='') as csvfile:
+    reader = csv.DictReader(csvfile, fieldnames=['Team Name', 'Team Category', 'Member1', 'Contact', 'Member2', 'Member3','Language','Institution', 'Username', 'password'])
+```
+Change the order of the array according to the csv order or it will show incorrect data
